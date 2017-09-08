@@ -1,6 +1,7 @@
 import java.lang.*;
 import java.util.*;
 import java.util.Comparator;
+// Not necessary to throw runtime exception in java
 public class BinarySearchDeluxe{
     public static <Key> int firstIndexOf(Key[] a, Key key, Comparator<Key> comparator){
         if(a==null||key==null||comparator==null)
