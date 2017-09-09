@@ -1,6 +1,7 @@
 import java.lang.*;
 import java.util.*;
 
+
 // Create a term class that contains query string and the corresponding weight
 public class Term implements Comparable<Term>{
     public String query;
@@ -37,6 +38,7 @@ public class Term implements Comparable<Term>{
                     return t1.query.substring(0,r).compareTo(t2.query.substring(0,r));
                 }else if(t1.query.substring(0,minLen).compareTo(t2.query.substring(0,minLen)) == 0){
                     if(t1.query.length() == minLen)
+
                         return -1;
                     else
                         return 1;
